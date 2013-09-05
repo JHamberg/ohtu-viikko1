@@ -28,7 +28,7 @@ public class VarastoTest {
     
     @Test
     public void otaVarastostaMaaraSuurempiKuinSaldo() {
-        assertEquals(10, varasto.otaVarastosta(15), vertailuTarkkuus);
+        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
     } 
 
     
@@ -40,8 +40,8 @@ public class VarastoTest {
     
     @Test
     public void maaraPaljonkoMahtuu() {
-        varasto.lisaaVarastoon(11);
-        assertEquals(11, varasto.getSaldo(), vertailuTarkkuus);
+        varasto.lisaaVarastoon(10);
+        assertEquals(10, varasto.getSaldo(), vertailuTarkkuus);
     } 
 
 
